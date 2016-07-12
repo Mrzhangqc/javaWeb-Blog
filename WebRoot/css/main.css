@@ -1,0 +1,197 @@
+@CHARSET "UTF-8";
+* {
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+html body {
+  font-family:"微软雅黑";
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background:url(../images/119.jpg) fixed center center no-repeat;
+  background-size:cover;
+}
+
+html body a{text-decoration:none;color:#5bc0de}
+
+//导航栏
+.buttons {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+#container{
+  background: rgba(135, 132, 116, 0.76);
+  width:100%;
+  margin:0px auto;
+  height:100px;
+  line-height:80px;
+  -webkit-box-shadow:0 0 5px #000;  
+  -moz-box-shadow:0 0 5px #000;  
+  box-shadow:0 0 5px #000;  
+  padding-bottom:0;
+}
+.container {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.butn {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 45px;
+  margin: 0 auto 1em;
+  max-width: 150px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  display:inline-block;
+}
+
+.butn:hover {
+  text-decoration: none;
+}
+
+.btn-1 {
+  background: #FFF;
+  opacity:0.7;
+  font-weight: 100;
+}
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+  color:#FFF;
+}
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-4 {
+  overflow: hidden;
+  position: relative;
+  background: #FFF;
+  opacity:0.7;
+}
+.btn-4 span {
+  z-index: 20;
+}
+.btn-4:after {
+  background:#3879D9;
+  color:#fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-4:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+//左侧栏
+
+.leftT a i{
+	color:#000;
+}
+.leftT .Hcontainer{
+	background:url(../images/ico/headerBg.jpg);
+}
+.Hcontainer img{
+	border:3px solid #FFF;
+	border-radius:150px;
+	height:150px;
+	width:150px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+	z-index:1;
+	transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+	/* Firefox 4 */
+	-moz-transition-delay: 0s;
+    -moz-transition-duration: 1s;
+    -moz-transition-property: all;
+    -moz-transition-timing-function: ease;
+	/* Safari 和 Chrome */
+	-webkit-transition-delay: 0s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease;
+	/* Opera */
+	-o-transition-delay: 0s;
+    -o-transition-duration: 1s;
+    -o-transition-property: all;
+    -o-transition-timing-function: ease;
+}
+.Hcontainer:hover img{
+	transform: scale(0.9, 0.9);
+	-ms-transform:scale(0.9,0.9); 	/* IE 9 */
+	-moz-transform:scale(0.9, 0.9); 	/* Firefox */
+	-webkit-transform:scale(0.9, 0.9); /* Safari 和 Chrome */
+	-o-transform:scale(0.9, 0.9); 	/* Opera */
+}	
+	
+//右侧

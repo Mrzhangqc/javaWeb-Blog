@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+html body {
+  font-family:"微软雅黑";
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background:url(../images/119.jpg) fixed center center no-repeat;
+  background-size:cover;
+}
+
+html body a{text-decoration:none;color:#5bc0de}
+
+.topBg{
+	height:280px;
+	background:url(../images/adminImg/a-topBg.jpg) center center no-repeat;
+	opacity:0.95
+}
+.proinfo{
+	height:200px;
+	background:url(../images/adminImg/a-topBg.jpg) center center no-repeat;
+	opacity:0.9
+}
